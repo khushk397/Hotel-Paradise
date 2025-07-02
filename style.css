@@ -40,6 +40,7 @@
             text-decoration: none;
             border-radius: 4px;
             transition: background-color 0.3s;
+            margin-bottom: 50px;
         }
 
         .btn:hover {
@@ -89,34 +90,54 @@
             font-size: 14px;
         }
 
-        /* Hero Section */
+        .nav-links a:hover {
+            color: #dac44a;
+        }
+
+       /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(37, 36, 36, 0.5), rgba(38, 38, 38, 0.5)), url(front.jpg);
-            background-size: cover;
-            background-position: center;
+            position: relative;
             height: 100vh;
-            min-height: 500px;
             display: flex;
             align-items: center;
             text-align: center;
             color: white;
-            padding-top: 80px;
+            overflow: hidden;
+        }
+
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(rgba(37, 36, 36, 0.5), rgba(38, 38, 38, 0.5));
+        }
+
+        .video-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .hero-content {
             max-width: 800px;
             margin: 0 auto;
-            padding: 0 20px;
+            position: relative;
+            z-index: 1;
         }
 
         .hero h1 {
-            font-size: 2.5rem;
+            font-size: 48px;
             margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         .hero p {
-            font-size: 1.1rem;
+            font-size: 20px;
             margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
 
         /* About Section */
@@ -177,12 +198,32 @@
 
         .room-card img {
             width: 100%;
-            height: 300px;
+            height: 400px;
             object-fit: cover;
         }
 
         .room-info {
             padding: 20px;
+        }
+
+        .hiddenac {
+            background-color: antiquewhite;
+            width: 50%;
+            margin: 0px auto;
+            margin-bottom: 20px;
+            padding: 20px 20px;
+            border-radius: 10px;
+            display: none;
+        }
+
+        .hiddenNac {
+            background-color: antiquewhite;
+            width: 50%;
+            margin: 0px auto;
+            margin-bottom: 20px;
+            padding: 20px 20px;
+            border-radius: 10px;
+            display: none;
         }
 
         /* Amenities Section */
@@ -295,9 +336,86 @@
             display: inline-block;
         }
 
+        #img1 {
+            width: 14%;
+            height: 13%;
+        }
+
+        #img2 {
+            width: 18.25%;
+            height: 30%;
+        }
+
+        #img3 {
+            width: 18%;
+            height: 30%;
+        }
+
+        #img4 {
+            width: 18%;
+            height: 30%;
+        }
+
+        #img5 {
+            width: 18%;
+            height: 30%;
+        }
+
+        #img6 {
+            width: 18%;
+            height: 30%;
+        }
+
+        #img7 {
+            width: 18%;
+            height: 30%;
+        }
+
+        #img8 {
+            width: 18%;
+            height: 30%;
+        }
+
+        #img9 {
+            width: 18%;
+            height: 30%;
+        }
+
+        #img10 {
+            width: 18%;
+            height: 30%;
+        }
+
+        #img11 {
+            width: 18%;
+            height: 30%;
+        }
+
+        #img12 {
+            width: 18%;
+            height: 35%;
+        }
+
+        #img13 {
+            width: 18%;
+            height: 30%;
+        }
+
+        #img14 {
+            width: 18%;
+            height: 30%;
+        }
+
+        .images:hover {
+            transform: scale(1.2);
+        }
+
         #gallery {
             text-align: center;
             margin: 10px;
+        }
+        .gallery {
+            text-align: center;
         }
 
         /* Mobile Menu */
@@ -331,6 +449,10 @@
             .nav-links li {
                 margin: 10px 0;
                 margin-left: 0;
+                background-color: white;
+                width: 40%;
+                padding: 10px;
+                border-radius: 10px;
             }
 
             .hero h1 {
@@ -356,6 +478,9 @@
 
             .scroll-container img {
                 height: 150px;
+            }
+            .images:hover{
+                transform: scale(1.8);
             }
         }
 
