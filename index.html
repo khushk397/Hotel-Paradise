@@ -39,16 +39,24 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+                <source src="Untitled video - Made with Clipchamp (1) - Copy - Copy - Copy - Copy.mp4" type="video/mp4">
+                <!-- Fallback image if video doesn't load -->
+                <img src="front.jpg" alt="Hotel Paradise">
+            </video>
+        </div>
         <div class="container">
             <div class="hero-content">
                 <h1>Welcome to Hotel Paradise</h1>
                 <p>Not just a destination, but a beautifully orchestrated escape where mornings begin with golden
                     light and every night ends in comfort that whispers luxury.
                 </p>
-                <a href="#rooms" class="btn">Explore Rooms</a>
+                <a href="#rooms" class="btn">View Rooms</a>
             </div>
         </div>
     </section>
+
 
     <!-- About Section -->
     <section class="about" id="about">
@@ -81,31 +89,57 @@
                 <div class="room-card">
                     <img src="rooms.jpg" alt="Deluxe Room">
                     <div class="room-info">
-                        <h3>Deluxe Room</h3>
+                        <h3>Deluxe AC Room</h3>
                         <p>Spacious room with modern amenities and city view</p>
-                        <a href="#contact" class="btn">Book Now</a>
+                        <a href="#" id="AC" class="btn">Book Now</a>
+                        <div class="hiddenac">
+                            <p><strong>Check in :</strong> 8 PM</p>
+                            <p><strong>Check out :</strong> 10 AM</p>
+                            <p><strong>Total tariff :</strong> 1950 rupees only</p>
+                            <p>with free Wi-Fi and garden</p>
+                            <a href="#contact" class="btn"> Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="room-card">
+                    <img src="room2.jpg" alt="Executive Suite">
+                    <div class="room-info">
+                        <h3>Deluxe NON-AC Room</h3>
+                        <p>Luxurious Rooms with modern design and city view</p>
+                        <a href="#" id="NAC" class="btn">Book Now</a>
+                        <div class="hiddenNac">
+                            <p><strong>Check in :</strong> 8 PM</p>
+                            <p><strong>Check out :</strong> 10 AM</p>
+                            <p><strong>Total tariff :</strong> 1450 rupees only</p>
+                            <p>with free Wi-Fi and garden</p>
+                            <a href="#contact" class="btn"> Book Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="gallery">
+        <h2 id="gallery">Gallery</h2>
+        <p>Enjoy the view of our Paradise</p>
+        <div class="scroll-container">
+            <img src="d5.jpg" id="img5" class="images">
+            <img src="d4.jpg" id="img4" class="images">
+            <img src="d13.jpg" id="img13" class="images">
+            <img src="d12.jpg" id="img12" class="images">
+            <img src="d8.jpg" id="img8" class="images">
+            <img src="d14.jpg" id="img14" class="images">
+            <img src="d10.jpg" id="img10" class="images">
+            <img src="d6.jpg" id="img6" class="images">
+            <img src="d9.jpg" id="img9" class="images">
+            <img src="d3.jpg" id="img3" class="images">
+            <img src="d1.jpg" id="img1" class="images">
+            <img src="d2.jpg" id="img2" class="images">
+            <img src="d11.jpg" id="img11" class="images">
 
-    <h2 id="gallery">Gallery</h2>
-
-    <div class="scroll-container">
-        <img src="d5.jpg">
-        <img src="d4.jpg">
-        <img src="d6.jpg">
-        <img src="d7.jpg">
-        <img src="d8.jpg">
-        <img src="d1.jpg">
-        <img src="d9.jpg">
-        <img src="d3.jpg">
-        <img src="d10.jpg">
-        <img src="d2.jpg">
-        <img src="d11.jpg">
-    </div>
-
+        </div>
+    </section>
     <!-- Amenities Section -->
     <section class="amenities" id="amenities">
         <div class="container">
@@ -155,9 +189,9 @@
                 </div>
 
                 <div class="contact-item">
-                    <a href="tel:+919407124224" id="phone" target="_blank">
+                    <a href="tel:+919407191111" id="phone" target="_blank">
                         <i class="fas fa-phone"></i>
-                        <span>94071 24224</span>
+                        <span>94071 91111</span>
                     </a>
                 </div>
 
@@ -176,9 +210,10 @@
         <div class="container">
             <div class="logo1">Hotel Paradise</div>
             <div class="social-links">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://instagram.com/paradisehotelrestaurant" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://maps.app.goo.gl/Gy2n6CcR7rWFWzcTA?g_st=aw" target="_blank"><i class="fa fa-map-marker"></i></a>
             </div>
+            <p>© 2024 Hotel Paradise. All rights reserved.</p>
             <p>Thank you for visiting</p>
         </div>
         <script src="script.js"></script>
