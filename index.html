@@ -4,9 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Paradise - Luxury Stay Experience</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Hotel Paradise - Luxury Beachfront Stay in Indore</title>
+    <meta name="description"
+        content="Experience luxury at Hotel Paradise, Indore. Beachfront rooms, fine dining, and premium amenities for your perfect getaway.">
+    <meta name="keywords" content="hotel paradise, luxury hotel indore, beachfront stay, best hotel in indore">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -15,7 +23,7 @@
         <div class="container">
             <nav>
                 <div class="logo">
-                    <img id="logo" src="logo_vector.svg" alt="">
+                    <img id="logo" src="logo_vector.svg" alt="Hotel Paradise Logo">
                     <p id="name">
                         <strong>Paradise</strong>
                         <br>
@@ -40,23 +48,27 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="video-background">
-            <video autoplay muted loop playsinline>
+            <video autoplay muted loop playsinline preload="metadata">
                 <source src="Untitled video - Made with Clipchamp (1) - Copy - Copy - Copy - Copy.mp4" type="video/mp4">
-                <!-- Fallback image if video doesn't load -->
-                <img src="front.jpg" alt="Hotel Paradise">
+                <img src="assets/hero-fallback.jpg" alt="Hotel Paradise Beach View">
             </video>
+            <div class="video-overlay"></div>
         </div>
         <div class="container">
             <div class="hero-content">
                 <h1>Welcome to Hotel Paradise</h1>
+                <p class="tagline">Where Luxury Meets the Ocean</p>
                 <p>Not just a destination, but a beautifully orchestrated escape where mornings begin with golden
-                    light and every night ends in comfort that whispers luxury.
-                </p>
-                <a href="#rooms" class="btn">View Rooms</a>
+                    light and every night ends in comfort that whispers luxury.</p>
+                <a href="#rooms" class="btn pulse">View Rooms</a>
             </div>
         </div>
     </section>
 
+    <!-- Special Offer Banner -->
+    <div class="offer-banner">
+        <p>🌴 Monsoon Special: 10% Off June Stays! <a href="#contact">Book Now →</a></p>
+    </div>
 
     <!-- About Section -->
     <section class="about" id="about">
@@ -70,10 +82,10 @@
                         districts, and entertainment venues.</p>
                     <p>Our dedicated staff is committed to providing exceptional service to ensure your stay is perfect
                         in every way.</p>
-                    <a href="#contact" class="btn">Contact Us</a>
+                    <a href="#contact" class="btn" id="aboutbtn">Contact Us</a>
                 </div>
                 <div class="about-image">
-                    <img src="paradisehome.jpg" alt="Hotel Lobby">
+                    <img src="paradisehome.jpg" alt="Hotel Paradise Lobby" loading="lazy">
                 </div>
             </div>
         </div>
@@ -83,74 +95,126 @@
     <section class="rooms" id="rooms">
         <div class="container">
             <h2>Our Rooms</h2>
-            <p>Choose from our variety of luxurious rooms designed for your comfort</p>
+            <p class="section-subtitle">Choose from our variety of luxurious rooms designed for your comfort</p>
 
             <div class="room-gallery">
                 <div class="room-card">
-                    <img src="rooms.jpg" alt="Deluxe Room">
+                    <div class="price-badge">₹1,950/night</div>
+                    <picture>
+                        <img src="rooms.jpg" alt="Deluxe AC Room" loading="lazy">
+                    </picture>
                     <div class="room-info">
                         <h3>Deluxe AC Room</h3>
-                        <p>Spacious room with modern amenities and city view</p>
+                        <div class="amenities">
+                            <span>🛌 King Bed</span>
+                            <span>🌊 Sea View</span>
+                            <span>❄️ Air Conditioning</span>
+                        </div>
                         <a href="#" id="AC" class="btn">Book Now</a>
-                        <div class="hiddenac">
-                            <p><strong>Check in :</strong> 8 PM</p>
-                            <p><strong>Check out :</strong> 10 AM</p>
-                            <p><strong>Total tariff :</strong> 1950 rupees only</p>
-                            <p>with free Wi-Fi and garden</p>
-                            <a href="#contact" class="btn"> Book Now</a>
+                        <div class="room-details hiddenac">
+                            <p><strong>Check in:</strong> 8 PM</p>
+                            <p><strong>Check out:</strong> 10 AM</p>
+                            <p><strong>Includes:</strong> Free Wi-Fi & Breakfast</p>
+                            <a href="#contact" class="btn">Confirm Booking</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="room-card">
-                    <img src="room2.jpg" alt="Executive Suite">
+                    <div class="price-badge">₹1,450/night</div>
+                    <picture>
+                        <img src="room2.jpg" alt="Deluxe NON-AC Room" loading="lazy">
+                    </picture>
                     <div class="room-info">
                         <h3>Deluxe NON-AC Room</h3>
-                        <p>Luxurious Rooms with modern design and city view</p>
+                        <div class="amenities">
+                            <span>🛌 Queen Bed</span>
+                            <span>🌿 Garden View</span>
+                            <span>🌀 Ceiling Fan</span>
+                        </div>
                         <a href="#" id="NAC" class="btn">Book Now</a>
-                        <div class="hiddenNac">
-                            <p><strong>Check in :</strong> 8 PM</p>
-                            <p><strong>Check out :</strong> 10 AM</p>
-                            <p><strong>Total tariff :</strong> 1450 rupees only</p>
-                            <p>with free Wi-Fi and garden</p>
-                            <a href="#contact" class="btn"> Book Now</a>
+                        <div class="room-details hiddenNac">
+                            <p><strong>Check in:</strong> 8 PM</p>
+                            <p><strong>Check out:</strong> 10 AM</p>
+                            <p><strong>Includes:</strong> Free Wi-Fi & Breakfast</p>
+                            <a href="#contact" class="btn">Confirm Booking</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="gallery">
-        <h2 id="gallery">Gallery</h2>
-        <p>Enjoy the view of our Paradise</p>
-        <div class="scroll-container">
-            <img src="d5.jpg" id="img5" class="images">
-            <img src="d4.jpg" id="img4" class="images">
-            <img src="d13.jpg" id="img13" class="images">
-            <img src="d12.jpg" id="img12" class="images">
-            <img src="d8.jpg" id="img8" class="images">
-            <img src="d14.jpg" id="img14" class="images">
-            <img src="d10.jpg" id="img10" class="images">
-            <img src="d6.jpg" id="img6" class="images">
-            <img src="d9.jpg" id="img9" class="images">
-            <img src="d3.jpg" id="img3" class="images">
-            <img src="d1.jpg" id="img1" class="images">
-            <img src="d2.jpg" id="img2" class="images">
-            <img src="d11.jpg" id="img11" class="images">
 
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Guest Experiences</h2>
+            <p class="section-subtitle">What our guests say about us</p>
+
+            <div class="testimonial-carousel">
+                <div class="testimonial active">
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <p>"One of the best food place to visit. 🚗🚗Have amazing food and quality.🍝🍜🍛 You can have a so
+                        cozy atmosphere🍃🍃🪟 and have a very pleasant staff .♥️♥️ Loved the place a food too!!😍😍🤩"
+                    </p>
+                    <div class="guest">
+                        <span>Arjun K., Indore</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <p>"The hotel check-in was a breeze. Room was luxury and stylish. The staff service was excellent.
+                        Food was incredibly great. Best hotel on this highway 💯"</p>
+                    <div class="guest">
+                        <span>Tanay K. S., Ujjian</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="rating">For more</div>
+                    <p>Click over this button to see more reviews</p>
+                    <div class="guest">
+                        <span><a href="https://g.page/r/CVACt1uCviVSEBE/review" class="btn" target="_blank">Our
+                                Reviews</a></span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <p class="section-subtitle">Experience the beauty of our Paradise</p>
+            <div class="scroll-container">
+                <img src="d6.jpg" alt="Hotel Pool" loading="lazy" class="gallery-image">
+                <img src="d4.jpg" alt="Restaurant" loading="lazy" class="gallery-image">
+                <img src="d8.jpg" alt="Beach View" loading="lazy" class="gallery-image">
+                <img src="d12.jpg" alt="Luxury Suite" loading="lazy" class="gallery-image">
+                <img src="d13.jpg" alt="Sunset" loading="lazy" class="gallery-image">
+                <img src="d9.jpg" alt="table" loading="lazy" class="gallery-image">
+                <img src="d10.jpg" alt="table" loading="lazy" class="gallery-image">
+                <img src="d14.jpg" alt="table" loading="lazy" class="gallery-image">
+                <img src="d5.jpg" alt="table" loading="lazy" class="gallery-image">
+                <img src="d1.jpg" alt="food" loading="lazy" class="gallery-image">
+                <img src="d2.jpg" alt="food" loading="lazy" class="gallery-image">
+                <img src="d3.jpg" alt="food" loading="lazy" class="gallery-image">
+                <img src="d11.jpg" alt="food" loading="lazy" class="gallery-image">
+            </div>
+        </div>
+    </section>
+
     <!-- Amenities Section -->
     <section class="amenities" id="amenities">
         <div class="container">
             <h2>Our Amenities</h2>
-            <p>We offer world-class facilities to enhance your stay</p>
+            <p class="section-subtitle">We offer world-class facilities to enhance your stay</p>
 
             <div class="amenities-grid">
                 <div class="amenity">
-                    <i class="fa fa-rss"></i>
+                    <i class="fas fa-wifi"></i>
                     <h3>Free Wi-Fi</h3>
-                    <p>Relex and chill with our Wi-Fi environment</p>
+                    <p>Stay connected with high-speed internet access</p>
                 </div>
 
                 <div class="amenity">
@@ -160,15 +224,15 @@
                 </div>
 
                 <div class="amenity">
-                    <i class="fa fa-leaf"></i>
-                    <h3>Nature Based Interior</h3>
-                    <p>The whole Interior is designed with essence of nature</p>
+                    <i class="fas fa-car"></i>
+                    <h3>Parking area</h3>
+                    <p>Large save and secure parking area available</p>
                 </div>
 
                 <div class="amenity">
-                    <i class="fa fa-car" aria-hidden="true"></i>
-                    <h3>Parking area</h3>
-                    <p>Large save and secure parking area available</p>
+                    <i class="fas fa-swimming-pool"></i>
+                    <h3>Infinity Pool</h3>
+                    <p>Stunning ocean-view infinity pool</p>
                 </div>
             </div>
         </div>
@@ -178,28 +242,67 @@
     <section class="contact" id="contact">
         <div class="container">
             <h2>Contact Us</h2>
-            <p>We'd love to hear from you. Reach out for bookings or inquiries.</p>
+            <p class="section-subtitle">We'd love to hear from you. Reach out for bookings or inquiries.</p>
 
-            <div class="contact-info">
-                <div class="contact-item">
-                    <a href="https://maps.app.goo.gl/Gy2n6CcR7rWFWzcTA?g_st=aw" id="location" target="_blank">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>On NH-47 Indore Ahemdabad road , Hatod near Amrit paper mills</span>
-                    </a>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <a href="https://maps.app.goo.gl/Gy2n6CcR7rWFWzcTA" target="_blank" rel="noopener">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>NH-47 Indore-Ahmedabad Road, Hatod near Amrit Paper Mills 45311, Dhar</span>
+                        </a>
+                    </div>
+
+                    <div class="contact-item">
+                        <a href="tel:+919407124224">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 94071 24224 </span>
+                        </a>
+                    </div>
+
+                    <div class="contact-item">
+                        <a href="mailto:paradisehotel&reataurant@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                            <span>paradisehotel&restaurant@gmail.com</span>
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://facebook.com/hotelparadise" target="_blank" rel="noopener"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/paradisehotelrestaurant" target="_blank" rel="noopener"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/919407124224" target="_blank" rel="noopener"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:92d25127-9180-427f-8088-4c1199a56fd3?comment_id=73e6fe45-14cd-4d35-a95d-b9a7935791ba"
+                            target="_blank" rel="noopener"><i class="fa fa-book"></i></a>
+                    </div>
                 </div>
 
-                <div class="contact-item">
-                    <a href="tel:+919407191111" id="phone" target="_blank">
-                        <i class="fas fa-phone"></i>
-                        <span>94071 91111</span>
-                    </a>
-                </div>
-
-                <div class="contact-item">
-                    <a href="mailto: paradisehotel&restaurant@gmail.com" id="email" target="_blank">
-                        <i class="fas fa-envelope"></i>
-                        <span>paradisehotel&restaurant@gmail.com</span>
-                    </a>
+                <div class="contact-form">
+                    <form id="booking-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Room Type</option>
+                                <option value="deluxe">Deluxe AC Room</option>
+                                <option value="standard">Deluxe NON-AC Room</option>
+                            </select>
+                        </div>
+                        <div class="form-group date-group">
+                            <input type="date" id="check-in" required>
+                            <input type="date" id="check-out" required>
+                        </div>
+                        <button type="submit" class="btn">Send Booking Request</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -208,16 +311,69 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="logo1">Hotel Paradise</div>
-            <div class="social-links">
-                <a href="https://instagram.com/paradisehotelrestaurant" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://maps.app.goo.gl/Gy2n6CcR7rWFWzcTA?g_st=aw" target="_blank"><i class="fa fa-map-marker"></i></a>
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="logo">
+                        <img src="logo-removebg-preview.png" alt="Hotel Paradise" loading="lazy">
+                        <h3>Hotel Paradise</h3>
+                    </div>
+                    <p>Where luxury meets comfort in the heart of Hatod.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#rooms">Rooms</a></li>
+                        <li><a href="#amenities">Amenities</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> NH-47 Hatod, Indore</li>
+                        <li><i class="fas fa-phone"></i> +91 94071 24224</li>
+                        <li><i class="fas fa-envelope"></i> paradisehotel&restaurant <br>@gmail.com</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="https://facebook.com/hotelparadise" target="_blank" rel="noopener"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/paradisehotelrestaurant" target="_blank" rel="noopener"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:92d25127-9180-427f-8088-4c1199a56fd3?comment_id=73e6fe45-14cd-4d35-a95d-b9a7935791ba"
+                            target="_blank" rel="noopener"><i class="fa fa-book"></i></a>
+                    </div>
+                </div>
             </div>
-            <p>© 2024 Hotel Paradise. All rights reserved.</p>
-            <p>Thank you for visiting</p>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hotel Paradise. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
         </div>
-        <script src="script.js"></script>
     </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
